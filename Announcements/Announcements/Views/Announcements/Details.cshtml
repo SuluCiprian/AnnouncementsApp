@@ -1,0 +1,124 @@
+﻿@model AnnouncementsApp.Domain.Announcement
+
+<div class="row">
+
+    <!-- Blog Post Content Column -->
+    <div class="col-lg-8">
+
+        <!-- Blog Post -->
+        <!-- Title -->
+        <h1>
+            <c:out value="@Model.Title" />
+        </h1>
+
+        <!-- Author -->
+        @*<p class="lead">
+            by <a href="#">@Model.Owner.FirstName &nbsp;@Model.Owner.LastName</a>
+        </p>*@
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>
+            <span class="glyphicon glyphicon-time"></span>
+            @Model.CreateDate
+        </p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">Category: @Model.Category.Name}</p>
+        <p class="lead">
+            Category description:
+            @Model.Category.Descriprion
+        </p>
+        <p class="lead">Location:@Model.Location</p>
+        @*<p>Owner Email: @Model.Owner.Email</p>*@
+        @*<p>Owner Phone: @Model.Owner.Phone</p>
+        <p>Confirmation Code: ${announcement.confirmationCode}</p>*@
+        <p>
+            Expires on: <span class="glyphicon glyphicon-time"></span>
+            <c:out value="@Model.ExpireDate" />
+        </p>
+        <hr>
+
+
+
+
+        <!-- Comments Form -->
+        <div class="well">
+            <h4>Leave a Comment:</h4>
+            <form:form action="/comments/add.do?aId=${announcement.id}" method="POST"
+                       modelAttribute="newComment">
+                <table>
+                    <tr>
+                        <td>Nane :</td>
+                        <td><form:input type="text" path="name" /></td>
+                    </tr>
+                    <tr>
+                        <td>Content :</td>
+                        <!--  	<td><form:input type="text" path="content" /></td>-->
+                        <td><form:textarea type="text" path="content" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" class="btn btn-primary" value="Submit"></td>
+                    </tr>
+                </table>
+            </form:form>
+        </div>
+
+        <hr>
+
+
+
+        <a class="btn btn-primary" href="/comments?id=${announcement.id}">
+            Show
+            Comments<span class="glyphicon glyphicon-chevron-right"></span>
+        </a> <br />
+        <br />
+
+        <div class="well">
+            <c:forEach var="X" items="${comments}">
+                <c:set var="node" value="${X}" scope="request" />
+                <jsp:include page="comment1.jsp" />
+            </c:forEach>
+        </div>
+
+
+    </div>
+
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+        <!-- Blog Search Well -->
+        <div class="well">
+            <h4>Search Announcement</h4>
+            <div class="input-group">
+                <input type="text" class="form-control"> <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+            <!-- /.input-group -->
+        </div>
+
+        <!-- Blog Categories Well -->
+        <!-- Side Widget Well -->
+        <div class="well">
+            <h4>Announcements website</h4>
+            <p> This is a website for announcements</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
