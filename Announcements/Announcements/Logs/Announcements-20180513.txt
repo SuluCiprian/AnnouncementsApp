@@ -1,0 +1,1278 @@
+2018-05-13T22:16:56.3677655+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:17:07.9324770+03:00  [INF] Executed DbCommand ("287"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:17:08.2967990+03:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:17:08.3623656+03:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:17:09.3508288+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T22:17:09.7854285+03:00  [INF] Executed DbCommand ("333"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T22:17:09.9448853+03:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:17:09.9829904+03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:17:10.4278240+03:00  [INF] Executed DbCommand ("285"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:17:11.6884339+03:00 0HLDP0OG9H1FQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T22:17:12.2142799+03:00 0HLDP0OG9H1FQ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:17:13.6567242+03:00 0HLDP0OG9H1FQ:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:17:37.8218086+03:00 0HLDP0OG9H1FQ:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T22:17:44.3120664+03:00 0HLDP0OG9H1FQ:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 30704.8912ms (afa2e885)
+2018-05-13T22:17:44.6908802+03:00 0HLDP0OG9H1FQ:00000001 [INF] Request finished in 32824.2094ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:17:45.3997984+03:00 0HLDP0OG9H1FQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-05-13T22:17:45.7634944+03:00 0HLDP0OG9H1FQ:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-05-13T22:17:45.9655246+03:00 0HLDP0OG9H1FQ:00000002 [INF] Request finished in 732.0916ms 200 font/woff2 (791a596a)
+2018-05-13T22:17:58.9924981+03:00 0HLDP0OG9H1FS:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Logout application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-05-13T22:17:59.0193177+03:00 0HLDP0OG9H1FS:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:17:59.1058797+03:00 0HLDP0OG9H1FS:00000001 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:17:59.2936518+03:00 0HLDP0OG9H1FS:00000001 [INF] Executing action method "Announcements.Controllers.AccountController.Logout (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:17:59.3877057+03:00 0HLDP0OG9H1FS:00000001 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-05-13T22:17:59.4665916+03:00 0HLDP0OG9H1FS:00000001 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-05-13T22:17:59.4923822+03:00 0HLDP0OG9H1FS:00000001 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-05-13T22:17:59.5570943+03:00 0HLDP0OG9H1FS:00000001 [INF] User logged out. (f9c27106)
+2018-05-13T22:17:59.6326337+03:00 0HLDP0OG9H1FS:00000001 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T22:17:59.8354070+03:00 0HLDP0OG9H1FS:00000001 [INF] Executed action "Announcements.Controllers.AccountController.Logout (Announcements)" in 576.9064ms (afa2e885)
+2018-05-13T22:18:00.0001456+03:00 0HLDP0OG9H1FS:00000001 [INF] Request finished in 873.6958ms 302  (791a596a)
+2018-05-13T22:18:00.1207257+03:00 0HLDP0OG9H1FS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T22:18:00.2466142+03:00 0HLDP0OG9H1FS:00000002 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:18:00.2691482+03:00 0HLDP0OG9H1FS:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T22:18:00.9038675+03:00 0HLDP0OG9H1FS:00000002 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 252.5543ms (afa2e885)
+2018-05-13T22:18:01.5723795+03:00 0HLDP0OG9H1FS:00000002 [INF] Request finished in 847.5203ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:18:12.9029771+03:00 0HLDP0OG9H1FS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Login   (ca22a1cb)
+2018-05-13T22:18:13.1960321+03:00 0HLDP0OG9H1FS:00000003 [INF] Executing action method "Announcements.Controllers.AccountController.Login (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:18:13.2258112+03:00 0HLDP0OG9H1FS:00000003 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-05-13T22:18:16.9417837+03:00 0HLDP0OG9H1FS:00000003 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-05-13T22:18:18.4370075+03:00 0HLDP0OG9H1FS:00000003 [INF] Executed action "Announcements.Controllers.AccountController.Login (Announcements)" in 5288.2695ms (afa2e885)
+2018-05-13T22:18:18.9595783+03:00 0HLDP0OG9H1FS:00000003 [INF] Request finished in 5564.5474ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:18:27.7178845+03:00 0HLDP0OG9H1FS:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Login application/x-www-form-urlencoded 250 (ca22a1cb)
+2018-05-13T22:18:27.9479039+03:00 0HLDP0OG9H1FS:00000004 [INF] Executing action method "Announcements.Controllers.AccountController.Login (Announcements)" with arguments (["Announcements.Models.AccountViewModels.LoginViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:18:27.9902581+03:00 0HLDP0OG9H1FS:00000004 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T22:18:29.3470035+03:00 0HLDP0OG9H1FS:00000004 [INF] Executed DbCommand ("167"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T22:18:30.7808400+03:00 0HLDP0OG9H1FS:00000004 [INF] Executed DbCommand ("12"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-13T22:18:31.3598023+03:00 0HLDP0OG9H1FS:00000004 [INF] Executed DbCommand ("43"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-13T22:18:31.4093452+03:00 0HLDP0OG9H1FS:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-13T22:18:31.4299404+03:00 0HLDP0OG9H1FS:00000004 [INF] User logged in. (fdce0db4)
+2018-05-13T22:18:31.4631778+03:00 0HLDP0OG9H1FS:00000004 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T22:18:31.5709642+03:00 0HLDP0OG9H1FS:00000004 [INF] Executed action "Announcements.Controllers.AccountController.Login (Announcements)" in 3689.8416ms (afa2e885)
+2018-05-13T22:18:31.6953105+03:00 0HLDP0OG9H1FS:00000004 [INF] Request finished in 3917.8103ms 302  (791a596a)
+2018-05-13T22:18:31.8132097+03:00 0HLDP0OG9H1FS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T22:18:31.9316334+03:00 0HLDP0OG9H1FS:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:18:31.9648575+03:00 0HLDP0OG9H1FS:00000005 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:18:32.0043605+03:00 0HLDP0OG9H1FS:00000005 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T22:18:32.0799665+03:00 0HLDP0OG9H1FS:00000005 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 81.5169ms (afa2e885)
+2018-05-13T22:18:32.3198462+03:00 0HLDP0OG9H1FS:00000005 [INF] Request finished in 366.016ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:24:00.3971267+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:24:09.3447224+03:00  [INF] Executed DbCommand ("332"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:24:09.8265089+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:24:09.9230457+03:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:24:10.7282283+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T22:24:11.1734858+03:00  [INF] Executed DbCommand ("336"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T22:24:11.4290177+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:24:11.5461276+03:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:24:11.9938540+03:00  [INF] Executed DbCommand ("293"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T22:24:13.5421129+03:00 0HLDP0SDVUKIV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T22:24:13.9798887+03:00 0HLDP0SDVUKIV:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:24:15.0377047+03:00 0HLDP0SDVUKIV:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:24:37.0946682+03:00 0HLDP0SDVUKIV:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T22:24:44.1021566+03:00 0HLDP0SDVUKIV:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 28795.5721ms (afa2e885)
+2018-05-13T22:24:44.7367836+03:00 0HLDP0SDVUKIV:00000001 [INF] Request finished in 30817.9762ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:24:45.1386913+03:00 0HLDP0SDVUKIV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/favicon.ico   (ca22a1cb)
+2018-05-13T22:24:45.2327197+03:00 0HLDP0SDVUKIV:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\favicon.ico"' (27b0a520)
+2018-05-13T22:24:45.3063597+03:00 0HLDP0SDVUKIV:00000002 [INF] Request finished in 162.6592ms 200 image/x-icon (791a596a)
+2018-05-13T22:25:45.6443236+03:00 0HLDP0SDVUKJ1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements   (ca22a1cb)
+2018-05-13T22:25:45.6749848+03:00 0HLDP0SDVUKJ1:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:25:45.7380066+03:00 0HLDP0SDVUKJ1:00000001 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:25:45.7562307+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:25:46.0007568+03:00 0HLDP0SDVUKJ1:00000001 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:25:46.4803351+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executed DbCommand ("146"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CategoryId], [a].[ConfirmationCode], [a].[Content], [a].[CreateDate], [a].[ExpireDate], [a].[Location], [a].[OwnerId], [a].[Status], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2018-05-13T22:25:51.7292388+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executing ViewResult, running view at path "/Views/Announcements/Index.cshtml". (9707eebe)
+2018-05-13T22:25:52.5015841+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executed DbCommand ("11"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:25:52.8898272+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:25:52.9273360+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:25:53.2349531+03:00 0HLDP0SDVUKJ1:00000001 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Index (Announcements)" in 7269.3032ms (afa2e885)
+2018-05-13T22:25:53.6113077+03:00 0HLDP0SDVUKJ1:00000001 [INF] Request finished in 7827.1499ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:26:13.0574906+03:00 0HLDP0SDVUKJ1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements/Details/2   (ca22a1cb)
+2018-05-13T22:26:13.1299641+03:00 0HLDP0SDVUKJ1:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:26:13.3555798+03:00 0HLDP0SDVUKJ1:00000002 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Details (Announcements)" with arguments (["2"]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:26:13.4000221+03:00 0HLDP0SDVUKJ1:00000002 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:26:13.6432659+03:00 0HLDP0SDVUKJ1:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[CategoryId], [e].[ConfirmationCode], [e].[Content], [e].[CreateDate], [e].[ExpireDate], [e].[Location], [e].[OwnerId], [e].[Status], [e].[Title]
+FROM [Announcements] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:14.3925466+03:00 0HLDP0SDVUKJ1:00000002 [INF] Executing ViewResult, running view at path "/Views/Announcements/Details.cshtml". (9707eebe)
+2018-05-13T22:26:14.4439785+03:00 0HLDP0SDVUKJ1:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:15.0139483+03:00 0HLDP0SDVUKJ1:00000002 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Details (Announcements)" in 1313.8682ms (afa2e885)
+2018-05-13T22:26:15.5642908+03:00 0HLDP0SDVUKJ1:00000002 [INF] Request finished in 1974.8877ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:26:21.2588562+03:00 0HLDP0SDVUKJ1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements   (ca22a1cb)
+2018-05-13T22:26:21.2763333+03:00 0HLDP0SDVUKJ1:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:26:21.2908241+03:00 0HLDP0SDVUKJ1:00000003 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:26:21.3058101+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:26:21.3208603+03:00 0HLDP0SDVUKJ1:00000003 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:26:21.3404957+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CategoryId], [a].[ConfirmationCode], [a].[Content], [a].[CreateDate], [a].[ExpireDate], [a].[Location], [a].[OwnerId], [a].[Status], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2018-05-13T22:26:21.3528112+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executing ViewResult, running view at path "/Views/Announcements/Index.cshtml". (9707eebe)
+2018-05-13T22:26:21.3824769+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:21.4274935+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:21.4637084+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:21.5755618+03:00 0HLDP0SDVUKJ1:00000003 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Index (Announcements)" in 196.4493ms (afa2e885)
+2018-05-13T22:26:21.9827123+03:00 0HLDP0SDVUKJ1:00000003 [INF] Request finished in 331.3195ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:26:23.5611018+03:00 0HLDP0SDVUKJ1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements/Details/1002   (ca22a1cb)
+2018-05-13T22:26:23.5803067+03:00 0HLDP0SDVUKJ1:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:26:23.6092212+03:00 0HLDP0SDVUKJ1:00000004 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Details (Announcements)" with arguments (["1002"]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:26:23.6596965+03:00 0HLDP0SDVUKJ1:00000004 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:26:23.7184023+03:00 0HLDP0SDVUKJ1:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[CategoryId], [e].[ConfirmationCode], [e].[Content], [e].[CreateDate], [e].[ExpireDate], [e].[Location], [e].[OwnerId], [e].[Status], [e].[Title]
+FROM [Announcements] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:23.7706200+03:00 0HLDP0SDVUKJ1:00000004 [INF] Executing ViewResult, running view at path "/Views/Announcements/Details.cshtml". (9707eebe)
+2018-05-13T22:26:23.8100013+03:00 0HLDP0SDVUKJ1:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:24.3630575+03:00 0HLDP0SDVUKJ1:00000004 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Details (Announcements)" in 233.0974ms (afa2e885)
+2018-05-13T22:26:24.7363243+03:00 0HLDP0SDVUKJ1:00000004 [INF] Request finished in 828.0121ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:26:28.5633403+03:00 0HLDP0SDVUKJ1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements   (ca22a1cb)
+2018-05-13T22:26:28.5868570+03:00 0HLDP0SDVUKJ1:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:26:28.6060486+03:00 0HLDP0SDVUKJ1:00000005 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:26:28.6283789+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:26:28.6419418+03:00 0HLDP0SDVUKJ1:00000005 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:26:28.6602394+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CategoryId], [a].[ConfirmationCode], [a].[Content], [a].[CreateDate], [a].[ExpireDate], [a].[Location], [a].[OwnerId], [a].[Status], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2018-05-13T22:26:28.6786151+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executing ViewResult, running view at path "/Views/Announcements/Index.cshtml". (9707eebe)
+2018-05-13T22:26:28.7186491+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:28.7545854+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:28.7835097+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:26:28.8394535+03:00 0HLDP0SDVUKJ1:00000005 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Index (Announcements)" in 201.6982ms (afa2e885)
+2018-05-13T22:26:29.2105444+03:00 0HLDP0SDVUKJ1:00000005 [INF] Request finished in 294.9942ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:28:28.2373774+03:00 0HLDP0SDVUKJ2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements   (ca22a1cb)
+2018-05-13T22:28:28.2660151+03:00 0HLDP0SDVUKJ2:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:28:28.2891254+03:00 0HLDP0SDVUKJ2:00000001 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:28:28.3095343+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:28:28.3307135+03:00 0HLDP0SDVUKJ2:00000001 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T22:28:28.3663367+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CategoryId], [a].[ConfirmationCode], [a].[Content], [a].[CreateDate], [a].[ExpireDate], [a].[Location], [a].[OwnerId], [a].[Status], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2018-05-13T22:28:29.2604835+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executing ViewResult, running view at path "/Views/Announcements/Index.cshtml". (9707eebe)
+2018-05-13T22:28:29.3631622+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:28:29.4693376+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:28:29.5207280+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T22:28:29.9562432+03:00 0HLDP0SDVUKJ2:00000001 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Index (Announcements)" in 1270.5979ms (afa2e885)
+2018-05-13T22:28:30.1401765+03:00 0HLDP0SDVUKJ3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/site.css   (ca22a1cb)
+2018-05-13T22:28:30.1767548+03:00 0HLDP0SDVUKJ2:00000001 [INF] Request finished in 1749.1021ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:28:30.3412701+03:00 0HLDP0SDVUKJ6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-05-13T22:28:30.3944474+03:00 0HLDP0SDVUKJ5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-05-13T22:28:30.4122519+03:00 0HLDP0SDVUKJ7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-13T22:28:30.5034722+03:00 0HLDP0SDVUKJ4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-05-13T22:28:30.5077141+03:00 0HLDP0SDVUKJ6:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-05-13T22:28:30.7862110+03:00 0HLDP0SDVUKJ7:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-05-13T22:28:31.0190960+03:00 0HLDP0SDVUKJ5:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-05-13T22:28:31.1774538+03:00 0HLDP0SDVUKJ6:00000001 [INF] Request finished in 505.8867ms 304 application/javascript (791a596a)
+2018-05-13T22:28:31.2079867+03:00 0HLDP0SDVUKJ7:00000001 [INF] Request finished in 674.9125ms 304 application/javascript (791a596a)
+2018-05-13T22:28:31.2535222+03:00 0HLDP0SDVUKJ4:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-05-13T22:28:31.4638927+03:00 0HLDP0SDVUKJ5:00000001 [INF] Request finished in 988.1315ms 304 text/css (791a596a)
+2018-05-13T22:28:31.5463755+03:00 0HLDP0SDVUKJ4:00000001 [INF] Request finished in 1217.2333ms 304 application/javascript (791a596a)
+2018-05-13T22:28:31.6598233+03:00 0HLDP0SDVUKJ3:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-05-13T22:28:32.0367281+03:00 0HLDP0SDVUKJ3:00000001 [INF] Request finished in 1735.6572ms 304 text/css (791a596a)
+2018-05-13T22:28:37.7385843+03:00 0HLDP0SDVUKJ2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements/Create   (ca22a1cb)
+2018-05-13T22:28:37.7635960+03:00 0HLDP0SDVUKJ2:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:28:37.8219241+03:00 0HLDP0SDVUKJ2:00000002 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:28:37.8354363+03:00 0HLDP0SDVUKJ2:00000002 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Create (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:28:40.7756682+03:00 0HLDP0SDVUKJ2:00000002 [INF] Executing ViewResult, running view at path "/Views/Announcements/Create.cshtml". (9707eebe)
+2018-05-13T22:28:42.2430255+03:00 0HLDP0SDVUKJ2:00000002 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Create (Announcements)" in 4377.3102ms (afa2e885)
+2018-05-13T22:28:42.6679777+03:00 0HLDP0SDVUKJ2:00000002 [INF] Request finished in 4545.4045ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:28:42.7550525+03:00 0HLDP0SDVUKJ7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/autocompleteControl.js   (ca22a1cb)
+2018-05-13T22:28:42.8395495+03:00 0HLDP0SDVUKJ6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/autocompleteControl.css   (ca22a1cb)
+2018-05-13T22:28:42.8925713+03:00 0HLDP0SDVUKJ7:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:28:43.0549349+03:00 0HLDP0SDVUKJ7:00000002 [INF] Request finished in 302.3205ms 404  (791a596a)
+2018-05-13T22:28:43.1055534+03:00 0HLDP0SDVUKJ6:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:28:43.2003115+03:00 0HLDP0SDVUKJ6:00000002 [INF] Request finished in 547.2325ms 404  (791a596a)
+2018-05-13T22:30:06.9442597+03:00 0HLDP0SDVUKJ8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements/Create   (ca22a1cb)
+2018-05-13T22:30:06.9644012+03:00 0HLDP0SDVUKJ8:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:30:06.9919316+03:00 0HLDP0SDVUKJ8:00000001 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T22:30:07.0155495+03:00 0HLDP0SDVUKJ8:00000001 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Create (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T22:30:08.4448992+03:00 0HLDP0SDVUKJ8:00000001 [INF] Executing ViewResult, running view at path "/Views/Announcements/Create.cshtml". (9707eebe)
+2018-05-13T22:30:09.3470579+03:00 0HLDP0SDVUKJ8:00000001 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Create (Announcements)" in 1986.6074ms (afa2e885)
+2018-05-13T22:30:09.7484267+03:00 0HLDP0SDVUKJ8:00000001 [INF] Request finished in 2446.5681ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T22:30:10.4468006+03:00 0HLDP0SDVUKJ9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/autocompleteControl.css   (ca22a1cb)
+2018-05-13T22:30:10.4868762+03:00 0HLDP0SDVUKJD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-05-13T22:30:10.5082581+03:00 0HLDP0SDVUKJC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-05-13T22:30:10.5272074+03:00 0HLDP0SDVUKJF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-05-13T22:30:10.5444715+03:00 0HLDP0SDVUKJA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/site.css   (ca22a1cb)
+2018-05-13T22:30:10.7936091+03:00 0HLDP0SDVUKJ9:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:30:10.8993104+03:00 0HLDP0SDVUKJ8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-05-13T22:30:11.0562214+03:00 0HLDP0SDVUKJD:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-05-13T22:30:11.1288967+03:00 0HLDP0SDVUKJA:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-05-13T22:30:11.3164248+03:00 0HLDP0SDVUKJC:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-05-13T22:30:11.6694794+03:00 0HLDP0SDVUKJF:00000001 [INF] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2018-05-13T22:30:11.9907164+03:00 0HLDP0SDVUKJ9:00000001 [INF] Request finished in 1279.8953ms 404  (791a596a)
+2018-05-13T22:30:12.0114804+03:00 0HLDP0SDVUKJ8:00000002 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-05-13T22:30:12.2343414+03:00 0HLDP0SDVUKJB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/autocompleteControl.js   (ca22a1cb)
+2018-05-13T22:30:12.3901080+03:00 0HLDP0SDVUKJD:00000001 [INF] Request finished in 1324.4649ms 304 application/javascript (791a596a)
+2018-05-13T22:30:12.4261064+03:00 0HLDP0SDVUKJA:00000001 [INF] Request finished in 1562.6265ms 304 text/css (791a596a)
+2018-05-13T22:30:12.4891419+03:00 0HLDP0SDVUKJC:00000001 [INF] Request finished in 1749.5389ms 304 text/css (791a596a)
+2018-05-13T22:30:12.6388981+03:00 0HLDP0SDVUKJF:00000001 [INF] Request finished in 1936.5292ms 304 application/javascript (791a596a)
+2018-05-13T22:30:12.6765367+03:00 0HLDP0SDVUKJ8:00000002 [INF] Request finished in 1668.1887ms 304 application/javascript (791a596a)
+2018-05-13T22:30:12.7397883+03:00 0HLDP0SDVUKJB:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T22:30:12.9471891+03:00 0HLDP0SDVUKJE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-13T22:30:13.0695257+03:00 0HLDP0SDVUKJG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-05-13T22:30:13.1061395+03:00 0HLDP0SDVUKJE:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-05-13T22:30:13.1348203+03:00 0HLDP0SDVUKJB:00000001 [INF] Request finished in 3172.093ms 404  (791a596a)
+2018-05-13T22:30:13.4516979+03:00 0HLDP0SDVUKJG:00000001 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-05-13T22:30:13.7828076+03:00 0HLDP0SDVUKJG:00000001 [INF] Request finished in 3416.7808ms 304 application/javascript (791a596a)
+2018-05-13T22:30:13.8157208+03:00 0HLDP0SDVUKJE:00000001 [INF] Request finished in 3380.944ms 304 application/javascript (791a596a)
+2018-05-13T23:03:44.2194641+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:03:54.6638918+03:00  [INF] Executed DbCommand ("1,288"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:03:55.1191005+03:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:03:55.2064240+03:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:03:56.2677214+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:03:57.1471548+03:00  [INF] Executed DbCommand ("736"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:03:57.4016100+03:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:03:57.4848383+03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:03:58.0783566+03:00  [INF] Executed DbCommand ("371"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:03:59.7256393+03:00 0HLDP1IL2KS2R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:04:00.2935147+03:00 0HLDP1IL2KS2R:00000001 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:04:01.9313249+03:00 0HLDP1IL2KS2R:00000001 [INF] Executed DbCommand ("243"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:04:03.2705886+03:00 0HLDP1IL2KS2R:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-13T23:04:03.7167601+03:00 0HLDP1IL2KS2R:00000001 [INF] Executed DbCommand ("84"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-13T23:04:03.7828358+03:00 0HLDP1IL2KS2R:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:04:05.4935753+03:00 0HLDP1IL2KS2R:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:04:34.0350032+03:00 0HLDP1IL2KS2R:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:04:42.7691394+03:00 0HLDP1IL2KS2R:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 37038.5961ms (afa2e885)
+2018-05-13T23:04:43.3284241+03:00 0HLDP1IL2KS2R:00000001 [INF] Request finished in 43313.8446ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:04:43.5706937+03:00 0HLDP1IL2KS2S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-05-13T23:04:43.8596129+03:00 0HLDP1IL2KS2R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-13T23:04:43.9068071+03:00 0HLDP1IL2KS2R:00000002 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\js\site.js"' (27b0a520)
+2018-05-13T23:04:43.9220424+03:00 0HLDP1IL2KS2S:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-05-13T23:04:44.5510741+03:00 0HLDP1IL2KS2R:00000002 [INF] Request finished in 300.1836ms 200 application/javascript (791a596a)
+2018-05-13T23:04:44.6340152+03:00 0HLDP1IL2KS2S:00000001 [INF] Request finished in 942.2671ms 200 font/woff2 (791a596a)
+2018-05-13T23:04:45.1260495+03:00 0HLDP1IL2KS2R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44393/favicon.ico   (ca22a1cb)
+2018-05-13T23:04:45.1791719+03:00 0HLDP1IL2KS2R:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\favicon.ico"' (27b0a520)
+2018-05-13T23:04:45.2602680+03:00 0HLDP1IL2KS2R:00000003 [INF] Request finished in 186.4345ms 200 image/x-icon (791a596a)
+2018-05-13T23:05:24.6755714+03:00 0HLDP1IL2KS2T:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Logout application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-05-13T23:05:24.6976681+03:00 0HLDP1IL2KS2T:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:05:24.8443016+03:00 0HLDP1IL2KS2T:00000001 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T23:05:25.1426115+03:00 0HLDP1IL2KS2T:00000001 [INF] Executing action method "Announcements.Controllers.AccountController.Logout (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:05:25.2307240+03:00 0HLDP1IL2KS2T:00000001 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-05-13T23:05:25.2730607+03:00 0HLDP1IL2KS2T:00000001 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-05-13T23:05:25.3386750+03:00 0HLDP1IL2KS2T:00000001 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-05-13T23:05:25.4014955+03:00 0HLDP1IL2KS2T:00000001 [INF] User logged out. (f9c27106)
+2018-05-13T23:05:25.4265143+03:00 0HLDP1IL2KS2T:00000001 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T23:05:25.4512237+03:00 0HLDP1IL2KS2T:00000001 [INF] Executed action "Announcements.Controllers.AccountController.Logout (Announcements)" in 672.364ms (afa2e885)
+2018-05-13T23:05:25.4876788+03:00 0HLDP1IL2KS2T:00000001 [INF] Request finished in 810.4119ms 302  (791a596a)
+2018-05-13T23:05:25.5181426+03:00 0HLDP1IL2KS2T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:05:25.5396034+03:00 0HLDP1IL2KS2T:00000002 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:05:25.5531166+03:00 0HLDP1IL2KS2T:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:05:25.6752589+03:00 0HLDP1IL2KS2T:00000002 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 124.9072ms (afa2e885)
+2018-05-13T23:05:25.8953439+03:00 0HLDP1IL2KS2T:00000002 [INF] Request finished in 188.3097ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:05:28.3046206+03:00 0HLDP1IL2KS2T:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Register   (ca22a1cb)
+2018-05-13T23:05:28.6807211+03:00 0HLDP1IL2KS2T:00000003 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:05:33.6744644+03:00 0HLDP1IL2KS2T:00000003 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:05:36.4604247+03:00 0HLDP1IL2KS2T:00000003 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 7303.4515ms (afa2e885)
+2018-05-13T23:05:37.0625665+03:00 0HLDP1IL2KS2T:00000003 [INF] Request finished in 8171.0523ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:08:20.1265637+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:08:29.8008881+03:00  [INF] Executed DbCommand ("948"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:08:30.2478027+03:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:08:30.3144531+03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:08:31.3286263+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:08:32.8169129+03:00  [INF] Executed DbCommand ("1,396"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:08:33.0594180+03:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:08:33.1655273+03:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:08:34.7128713+03:00  [INF] Executed DbCommand ("1,377"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:08:35.5907855+03:00 0HLDP1L7EALIF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:08:36.7495023+03:00 0HLDP1L7EALIF:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:09:07.0556292+03:00 0HLDP1L7EALIF:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:09:15.0504152+03:00 0HLDP1L7EALIF:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 38322.0042ms (afa2e885)
+2018-05-13T23:09:15.1251735+03:00 0HLDP1L7EALIF:00000001 [INF] Request finished in 39559.2113ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:09:40.3446582+03:00 0HLDP1L7EALIF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Register   (ca22a1cb)
+2018-05-13T23:09:40.7924925+03:00 0HLDP1L7EALIF:00000002 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:09:45.0292787+03:00 0HLDP1L7EALIF:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:09:46.7805091+03:00 0HLDP1L7EALIF:00000002 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 6076.0171ms (afa2e885)
+2018-05-13T23:09:46.9388923+03:00 0HLDP1L7EALIF:00000002 [INF] Request finished in 6481.5848ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:10:16.4755486+03:00 0HLDP1L7EALIF:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Register application/x-www-form-urlencoded 282 (ca22a1cb)
+2018-05-13T23:10:16.9278589+03:00 0HLDP1L7EALIF:00000003 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments (["Announcements.Models.AccountViewModels.RegisterViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:10:17.3382393+03:00 0HLDP1L7EALIF:00000003 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:10:18.8920488+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("132"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:10:20.9227317+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("123"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);" (0723d8ff)
+2018-05-13T23:10:21.1019913+03:00 0HLDP1L7EALIF:00000003 [INF] User created a new account with password. (693a7015)
+2018-05-13T23:10:21.3079480+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("40"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-05-13T23:10:21.7216724+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("10"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-05-13T23:10:21.8223603+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-05-13T23:10:21.9689532+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:10:22.1306220+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("16"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-05-13T23:10:22.2073200+03:00 0HLDP1L7EALIF:00000003 [INF] Executed DbCommand ("18"ms) [Parameters=["@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-05-13T23:10:22.7183500+03:00 0HLDP1L7EALIF:00000003 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 6020.8353ms (afa2e885)
+2018-05-13T23:10:23.6155723+03:00 0HLDP1L7EALIF:00000003 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Announcements.Controllers.AccountController.<Register>d__18.MoveNext() in E:\AnnouncementsApp\Announcements\Announcements\Controllers\AccountController.cs:line 235
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-05-13T23:10:25.0659581+03:00 0HLDP1L7EALIF:00000003 [INF] Request finished in 8355.3679ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:18:43.2216195+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:18:53.5257290+03:00  [INF] Executed DbCommand ("298"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:18:54.1137151+03:00  [INF] Executed DbCommand ("78"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:18:54.3101116+03:00  [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:18:55.9980965+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:18:56.5941227+03:00  [INF] Executed DbCommand ("468"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:18:56.8587867+03:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:18:56.9099108+03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:18:57.4422429+03:00  [INF] Executed DbCommand ("282"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:18:58.9364275+03:00 0HLDP1R1184AB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:19:02.0785957+03:00 0HLDP1R1184AB:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:19:27.9119660+03:00 0HLDP1R1184AB:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:19:36.4042257+03:00 0HLDP1R1184AB:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 34153.3607ms (afa2e885)
+2018-05-13T23:19:37.4109063+03:00 0HLDP1R1184AB:00000001 [INF] Request finished in 37665.9343ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:19:37.8645231+03:00 0HLDP1R1184AB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/favicon.ico   (ca22a1cb)
+2018-05-13T23:19:37.9956292+03:00 0HLDP1R1184AB:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\favicon.ico"' (27b0a520)
+2018-05-13T23:19:38.2992767+03:00 0HLDP1R1184AB:00000002 [INF] Request finished in 260.9988ms 200 image/x-icon (791a596a)
+2018-05-13T23:19:40.9963096+03:00 0HLDP1R1184AD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Register   (ca22a1cb)
+2018-05-13T23:19:41.4323734+03:00 0HLDP1R1184AD:00000001 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:19:45.2990915+03:00 0HLDP1R1184AD:00000001 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:19:47.2940817+03:00 0HLDP1R1184AD:00000001 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 5815.9712ms (afa2e885)
+2018-05-13T23:19:47.7952944+03:00 0HLDP1R1184AD:00000001 [INF] Request finished in 6341.3272ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:20:08.9280124+03:00 0HLDP1R1184AD:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Register application/x-www-form-urlencoded 284 (ca22a1cb)
+2018-05-13T23:20:09.2078738+03:00 0HLDP1R1184AD:00000002 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments (["Announcements.Models.AccountViewModels.RegisterViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:20:09.6203572+03:00 0HLDP1R1184AD:00000002 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:20:11.2751822+03:00 0HLDP1R1184AD:00000002 [INF] Executed DbCommand ("159"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:20:11.9723177+03:00 0HLDP1R1184AD:00000002 [WRN] User "26951f0f-3d09-4e71-b44c-8dffbccdd57b" validation failed: "DuplicateUserName". (5dc28e15)
+2018-05-13T23:20:12.0141002+03:00 0HLDP1R1184AD:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:20:12.5836901+03:00 0HLDP1R1184AD:00000002 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 3023.7948ms (afa2e885)
+2018-05-13T23:20:13.1739800+03:00 0HLDP1R1184AD:00000002 [INF] Request finished in 3750.5909ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:20:59.1020704+03:00 0HLDP1R1184AD:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Register application/x-www-form-urlencoded 282 (ca22a1cb)
+2018-05-13T23:20:59.1510278+03:00 0HLDP1R1184AD:00000003 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments (["Announcements.Models.AccountViewModels.RegisterViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:20:59.2840212+03:00 0HLDP1R1184AD:00000003 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:20:59.6030829+03:00 0HLDP1R1184AD:00000003 [INF] Executed DbCommand ("26"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:20:59.6169271+03:00 0HLDP1R1184AD:00000003 [WRN] User "44f85060-252e-42bb-98ce-e041969d4382" validation failed: "DuplicateUserName". (5dc28e15)
+2018-05-13T23:20:59.6306512+03:00 0HLDP1R1184AD:00000003 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:20:59.6718174+03:00 0HLDP1R1184AD:00000003 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 532.3573ms (afa2e885)
+2018-05-13T23:20:59.7142886+03:00 0HLDP1R1184AD:00000003 [INF] Request finished in 608.7193ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:21:22.4262074+03:00 0HLDP1R1184AD:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Register application/x-www-form-urlencoded 283 (ca22a1cb)
+2018-05-13T23:21:22.4568144+03:00 0HLDP1R1184AD:00000004 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments (["Announcements.Models.AccountViewModels.RegisterViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:21:22.5312452+03:00 0HLDP1R1184AD:00000004 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:21:22.6263692+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("28"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:21:23.6545343+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("26"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);" (0723d8ff)
+2018-05-13T23:21:23.7919074+03:00 0HLDP1R1184AD:00000004 [INF] User created a new account with password. (693a7015)
+2018-05-13T23:21:23.9422835+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-05-13T23:21:24.2278608+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("23"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-05-13T23:21:24.2709541+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-05-13T23:21:24.3716538+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("8"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:21:24.6208905+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("38"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-05-13T23:21:24.6987068+03:00 0HLDP1R1184AD:00000004 [INF] Executed DbCommand ("14"ms) [Parameters=["@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-05-13T23:23:27.4812696+03:00 0HLDP1R1184AD:00000004 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 125021.5691ms (afa2e885)
+2018-05-13T23:23:28.0294398+03:00 0HLDP1R1184AD:00000004 [ERR] An unhandled exception has occurred while executing the request (cf926119)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Announcements.Controllers.AccountController.<Register>d__18.MoveNext() in E:\AnnouncementsApp\Announcements\Announcements\Controllers\AccountController.cs:line 235
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__15.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2018-05-13T23:23:28.4025732+03:00 0HLDP1R1184AD:00000004 [INF] Request finished in 126011.9654ms 500 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:24:25.6713258+03:00 0HLDP1R1184AD:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Register application/x-www-form-urlencoded 283 (ca22a1cb)
+2018-05-13T23:24:33.8441486+03:00 0HLDP1R1184AD:00000005 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments (["Announcements.Models.AccountViewModels.RegisterViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:24:33.9884311+03:00 0HLDP1R1184AD:00000005 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:24:34.0652380+03:00 0HLDP1R1184AD:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:24:34.1978287+03:00 0HLDP1R1184AD:00000005 [WRN] User "8970b980-d21a-43f4-81f3-5b8b232c250a" validation failed: "DuplicateUserName". (5dc28e15)
+2018-05-13T23:24:34.2334644+03:00 0HLDP1R1184AD:00000005 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:24:34.8654858+03:00 0HLDP1R1184AD:00000005 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 8572.3298ms (afa2e885)
+2018-05-13T23:24:34.9535895+03:00 0HLDP1R1184AE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-05-13T23:24:35.2616433+03:00 0HLDP1R1184AF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-05-13T23:24:35.2806096+03:00 0HLDP1R1184AG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-13T23:24:35.3553858+03:00 0HLDP1R1184AD:00000005 [INF] Request finished in 9246.4192ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:24:35.4022853+03:00 0HLDP1R1184AH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-05-13T23:24:35.4146100+03:00 0HLDP1R1184AE:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2018-05-13T23:24:35.4363142+03:00 0HLDP1R1184AK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-05-13T23:24:35.5138370+03:00 0HLDP1R1184AG:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-05-13T23:24:35.6076098+03:00 0HLDP1R1184AF:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2018-05-13T23:24:36.2597522+03:00 0HLDP1R1184AH:00000001 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-05-13T23:24:36.5287921+03:00 0HLDP1R1184AK:00000001 [INF] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2018-05-13T23:24:36.8075893+03:00 0HLDP1R1184AE:00000001 [INF] Request finished in 676.8518ms 304 application/javascript (791a596a)
+2018-05-13T23:24:36.9635879+03:00 0HLDP1R1184AF:00000001 [INF] Request finished in 775.1345ms 304 text/css (791a596a)
+2018-05-13T23:24:37.0777018+03:00 0HLDP1R1184AG:00000001 [INF] Request finished in 681.0209ms 304 application/javascript (791a596a)
+2018-05-13T23:24:37.3472123+03:00 0HLDP1R1184AH:00000001 [INF] Request finished in 1335.9269ms 304 application/javascript (791a596a)
+2018-05-13T23:24:37.4242835+03:00 0HLDP1R1184AK:00000001 [INF] Request finished in 1336.9718ms 304 application/javascript (791a596a)
+2018-05-13T23:24:37.4524893+03:00 0HLDP1R1184AJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-05-13T23:24:37.5859005+03:00 0HLDP1R1184AI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/site.css   (ca22a1cb)
+2018-05-13T23:24:37.5946503+03:00 0HLDP1R1184AJ:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2018-05-13T23:24:37.6498300+03:00 0HLDP1R1184AI:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-05-13T23:24:38.0694672+03:00 0HLDP1R1184AI:00000001 [INF] Request finished in 2491.0803ms 304 text/css (791a596a)
+2018-05-13T23:24:38.0961878+03:00 0HLDP1R1184AJ:00000001 [INF] Request finished in 2433.8688ms 304 application/javascript (791a596a)
+2018-05-13T23:30:35.1808315+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:30:49.3356138+03:00  [INF] Executed DbCommand ("431"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:30:50.0182185+03:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:30:51.5468034+03:00  [INF] Executed DbCommand ("1,457"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:30:52.4457932+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:30:53.0468168+03:00  [INF] Executed DbCommand ("527"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:30:53.2254976+03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:30:53.2584687+03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:30:53.8733139+03:00  [INF] Executed DbCommand ("467"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:30:54.7200774+03:00 0HLDP21MGTHPM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:30:57.3000696+03:00 0HLDP21MGTHPM:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:36:17.3325912+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:36:26.2468534+03:00  [INF] Executed DbCommand ("316"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:36:26.6967089+03:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:36:26.7545732+03:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:36:27.3463019+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:36:27.7487486+03:00  [INF] Executed DbCommand ("344"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:36:27.9187237+03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:36:27.9423159+03:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:36:28.2213295+03:00  [INF] Executed DbCommand ("189"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:36:29.1490160+03:00 0HLDP24Q4UHP3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:36:30.6317325+03:00 0HLDP24Q4UHP3:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:36:54.8352443+03:00 0HLDP24Q4UHP3:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:37:01.7839417+03:00 0HLDP24Q4UHP3:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 30901.9118ms (afa2e885)
+2018-05-13T23:37:02.8982065+03:00 0HLDP24Q4UHP3:00000001 [INF] Request finished in 32775.4203ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:37:03.4328024+03:00 0HLDP24Q4UHP3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-05-13T23:37:03.5009616+03:00 0HLDP24Q4UHP3:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-05-13T23:37:03.6455377+03:00 0HLDP24Q4UHP3:00000002 [INF] Request finished in 254.6758ms 200 font/woff2 (791a596a)
+2018-05-13T23:37:09.1221621+03:00 0HLDP24Q4UHP5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Register   (ca22a1cb)
+2018-05-13T23:37:09.5914079+03:00 0HLDP24Q4UHP5:00000001 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:37:13.0857244+03:00 0HLDP24Q4UHP5:00000001 [INF] Executing ViewResult, running view at path "/Views/Account/Register.cshtml". (9707eebe)
+2018-05-13T23:37:15.2731664+03:00 0HLDP24Q4UHP5:00000001 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 5605.147ms (afa2e885)
+2018-05-13T23:37:15.6759352+03:00 0HLDP24Q4UHP5:00000001 [INF] Request finished in 6168.7183ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:37:42.2821795+03:00 0HLDP24Q4UHP5:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Register application/x-www-form-urlencoded 291 (ca22a1cb)
+2018-05-13T23:37:42.5587104+03:00 0HLDP24Q4UHP5:00000002 [INF] Executing action method "Announcements.Controllers.AccountController.Register (Announcements)" with arguments (["Announcements.Models.AccountViewModels.RegisterViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:37:42.9095623+03:00 0HLDP24Q4UHP5:00000002 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:37:44.5659986+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("402"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:37:46.4730392+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("85"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);" (0723d8ff)
+2018-05-13T23:37:46.6032687+03:00 0HLDP24Q4UHP5:00000002 [INF] User created a new account with password. (693a7015)
+2018-05-13T23:37:46.7679150+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-05-13T23:37:47.1662852+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("19"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)" (0723d8ff)
+2018-05-13T23:37:47.2590020+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0" (0723d8ff)
+2018-05-13T23:37:47.4634868+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("47"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:37:47.7025521+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);" (0723d8ff)
+2018-05-13T23:37:47.7909667+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("18"ms) [Parameters=["@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-05-13T23:37:48.2704378+03:00 0HLDP24Q4UHP5:00000002 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:37:48.6943093+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed DbCommand ("17"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [FirstName], [LastName], [UserName])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();" (0723d8ff)
+2018-05-13T23:37:52.3785320+03:00 0HLDP24Q4UHP5:00000002 [INF] User created a new account with password. (693a7015)
+2018-05-13T23:37:52.4011599+03:00 0HLDP24Q4UHP5:00000002 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T23:37:52.4200842+03:00 0HLDP24Q4UHP5:00000002 [INF] Executed action "Announcements.Controllers.AccountController.Register (Announcements)" in 10046.7034ms (afa2e885)
+2018-05-13T23:37:52.4907877+03:00 0HLDP24Q4UHP5:00000002 [INF] Request finished in 10221.6046ms 302  (791a596a)
+2018-05-13T23:37:52.5685676+03:00 0HLDP24Q4UHP5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:37:52.5901835+03:00 0HLDP24Q4UHP5:00000003 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:37:52.6155825+03:00 0HLDP24Q4UHP5:00000003 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:37:52.7120188+03:00 0HLDP24Q4UHP5:00000003 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 73.2104ms (afa2e885)
+2018-05-13T23:37:53.0916825+03:00 0HLDP24Q4UHP5:00000003 [INF] Request finished in 170.7654ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:54:00.5870310+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:54:11.8384491+03:00  [INF] Executed DbCommand ("372"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:54:12.2971994+03:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:54:12.4910412+03:00  [INF] Executed DbCommand ("83"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:54:13.8646340+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:54:14.3227888+03:00  [INF] Executed DbCommand ("354"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:54:14.5590788+03:00  [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:54:14.6106647+03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:54:15.2812090+03:00  [INF] Executed DbCommand ("421"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:54:16.2555579+03:00 0HLDP2EO4MESN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:54:17.8970955+03:00 0HLDP2EO4MESN:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:54:42.1994894+03:00 0HLDP2EO4MESN:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:54:50.5520240+03:00 0HLDP2EO4MESN:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 32796.6015ms (afa2e885)
+2018-05-13T23:54:51.8977893+03:00 0HLDP2EO4MESN:00000001 [INF] Request finished in 34471.7948ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:54:52.1076339+03:00 0HLDP2EO4MESQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-05-13T23:54:52.1989537+03:00 0HLDP2EO4MESP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-05-13T23:54:52.3716030+03:00 0HLDP2EO4MESQ:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-05-13T23:54:52.4166643+03:00 0HLDP2EO4MESP:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"E:\AnnouncementsApp\Announcements\Announcements\wwwroot\js\site.js"' (27b0a520)
+2018-05-13T23:54:52.6413188+03:00 0HLDP2EO4MESP:00000001 [INF] Request finished in 461.139ms 200 application/javascript (791a596a)
+2018-05-13T23:54:52.7725777+03:00 0HLDP2EO4MESQ:00000001 [INF] Request finished in 659.9783ms 200 font/woff2 (791a596a)
+2018-05-13T23:54:55.6075281+03:00 0HLDP2EO4MESP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Login   (ca22a1cb)
+2018-05-13T23:54:56.0172563+03:00 0HLDP2EO4MESP:00000002 [INF] Executing action method "Announcements.Controllers.AccountController.Login (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:54:56.1231177+03:00 0HLDP2EO4MESP:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-05-13T23:55:00.6787233+03:00 0HLDP2EO4MESP:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-05-13T23:55:03.7446410+03:00 0HLDP2EO4MESP:00000002 [INF] Executed action "Announcements.Controllers.AccountController.Login (Announcements)" in 7622.6589ms (afa2e885)
+2018-05-13T23:55:04.1610816+03:00 0HLDP2EO4MESP:00000002 [INF] Request finished in 8181.3832ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:55:17.1448315+03:00 0HLDP2EO4MESP:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Login application/x-www-form-urlencoded 250 (ca22a1cb)
+2018-05-13T23:55:17.4415399+03:00 0HLDP2EO4MESP:00000003 [INF] Executing action method "Announcements.Controllers.AccountController.Login (Announcements)" with arguments (["Announcements.Models.AccountViewModels.LoginViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:55:17.4829416+03:00 0HLDP2EO4MESP:00000003 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:55:18.8063238+03:00 0HLDP2EO4MESP:00000003 [INF] Executed DbCommand ("251"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:55:20.0678302+03:00 0HLDP2EO4MESP:00000003 [INF] Executed DbCommand ("97"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-13T23:55:20.6594753+03:00 0HLDP2EO4MESP:00000003 [INF] Executed DbCommand ("20"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-13T23:55:20.7668635+03:00 0HLDP2EO4MESP:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-13T23:55:20.8272828+03:00 0HLDP2EO4MESP:00000003 [INF] User logged in. (fdce0db4)
+2018-05-13T23:55:20.9386896+03:00 0HLDP2EO4MESP:00000003 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T23:55:20.9842169+03:00 0HLDP2EO4MESP:00000003 [INF] Executed action "Announcements.Controllers.AccountController.Login (Announcements)" in 3713.9171ms (afa2e885)
+2018-05-13T23:55:21.0845785+03:00 0HLDP2EO4MESP:00000003 [INF] Request finished in 3906.9574ms 302  (791a596a)
+2018-05-13T23:55:21.2312119+03:00 0HLDP2EO4MESP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:55:21.2951389+03:00 0HLDP2EO4MESP:00000004 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:55:21.3181891+03:00 0HLDP2EO4MESP:00000004 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:55:21.3351925+03:00 0HLDP2EO4MESP:00000004 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:55:21.7995169+03:00 0HLDP2EO4MESP:00000004 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 68.93ms (afa2e885)
+2018-05-13T23:55:22.3701820+03:00 0HLDP2EO4MESP:00000004 [INF] Request finished in 672.9306ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:55:26.6868466+03:00 0HLDP2EO4MESP:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements   (ca22a1cb)
+2018-05-13T23:55:26.7132145+03:00 0HLDP2EO4MESP:00000005 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:55:26.7593930+03:00 0HLDP2EO4MESP:00000005 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T23:55:26.8550513+03:00 0HLDP2EO4MESP:00000005 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:55:27.1847455+03:00 0HLDP2EO4MESP:00000005 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:55:27.4014385+03:00 0HLDP2EO4MESP:00000005 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CategoryId], [a].[ConfirmationCode], [a].[Content], [a].[CreateDate], [a].[ExpireDate], [a].[Location], [a].[OwnerId], [a].[Status], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2018-05-13T23:55:29.1648017+03:00 0HLDP2EO4MESP:00000005 [INF] Executing ViewResult, running view at path "/Views/Announcements/Index.cshtml". (9707eebe)
+2018-05-13T23:55:29.8997086+03:00 0HLDP2EO4MESP:00000005 [INF] Executed DbCommand ("28"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:55:30.2542524+03:00 0HLDP2EO4MESP:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:55:30.3862893+03:00 0HLDP2EO4MESP:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:55:30.7702823+03:00 0HLDP2EO4MESP:00000005 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Index (Announcements)" in 3685.3091ms (afa2e885)
+2018-05-13T23:55:30.9556561+03:00 0HLDP2EO4MESP:00000005 [INF] Request finished in 4121.1214ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:55:37.9065869+03:00 0HLDP2EO4MESP:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements/Create   (ca22a1cb)
+2018-05-13T23:55:38.0396460+03:00 0HLDP2EO4MESP:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:55:38.0686713+03:00 0HLDP2EO4MESP:00000006 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T23:55:38.0936978+03:00 0HLDP2EO4MESP:00000006 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Create (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:55:39.4668210+03:00 0HLDP2EO4MESP:00000006 [INF] Executing ViewResult, running view at path "/Views/Announcements/Create.cshtml". (9707eebe)
+2018-05-13T23:55:39.8074267+03:00 0HLDP2EO4MESP:00000006 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Create (Announcements)" in 1712.9534ms (afa2e885)
+2018-05-13T23:55:40.4571598+03:00 0HLDP2EO4MESP:00000006 [INF] Request finished in 1947.3112ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:55:40.5864162+03:00 0HLDP2EO4MESP:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/autocompleteControl.css   (ca22a1cb)
+2018-05-13T23:55:40.6709953+03:00 0HLDP2EO4MESR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/autocompleteControl.js   (ca22a1cb)
+2018-05-13T23:55:40.7695818+03:00 0HLDP2EO4MESP:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:55:40.9538178+03:00 0HLDP2EO4MESR:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:55:41.2423260+03:00 0HLDP2EO4MESR:00000001 [INF] Request finished in 468.3867ms 404  (791a596a)
+2018-05-13T23:55:41.5736384+03:00 0HLDP2EO4MESP:00000007 [INF] Request finished in 252.9274ms 404  (791a596a)
+2018-05-13T23:58:03.3271078+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:58:08.7702258+03:00  [INF] Executed DbCommand ("405"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Masini')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:58:09.2201723+03:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [at]
+        WHERE [at].[Name] = N'Case')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:58:09.3098879+03:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [at]
+        WHERE [at].[UserName] = N'teacher@gmail.com')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:58:10.3973321+03:00  [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:58:10.9137853+03:00  [INF] Executed DbCommand ("435"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0" (0723d8ff)
+2018-05-13T23:58:11.2447108+03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'Admin')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:58:11.3951751+03:00  [INF] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [r]
+        WHERE [r].[Name] = N'User')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:58:12.1044090+03:00  [INF] Executed DbCommand ("487"ms) [Parameters=["@__user_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [usr]
+        WHERE [usr].[UserName] = @__user_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-05-13T23:58:13.2776070+03:00 0HLDP2GUO79TA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:58:13.6902428+03:00 0HLDP2GUO79TA:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:58:15.1981535+03:00 0HLDP2GUO79TA:00000001 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:58:40.0495910+03:00 0HLDP2GUO79TA:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:58:47.5313864+03:00 0HLDP2GUO79TA:00000001 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 32363.9581ms (afa2e885)
+2018-05-13T23:58:47.7072852+03:00 0HLDP2GUO79TA:00000001 [INF] Request finished in 34417.1847ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:58:54.2004409+03:00 0HLDP2GUO79TA:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Logout application/x-www-form-urlencoded 225 (ca22a1cb)
+2018-05-13T23:58:54.2282103+03:00 0HLDP2GUO79TA:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:58:54.3509170+03:00 0HLDP2GUO79TA:00000002 [INF] Authorization was successful for user: "cipriansulu1@gmail.com". (d7eb274a)
+2018-05-13T23:58:54.4995950+03:00 0HLDP2GUO79TA:00000002 [INF] Executing action method "Announcements.Controllers.AccountController.Logout (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:58:54.6330247+03:00 0HLDP2GUO79TA:00000002 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-05-13T23:58:54.6640272+03:00 0HLDP2GUO79TA:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-05-13T23:58:54.6785930+03:00 0HLDP2GUO79TA:00000002 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-05-13T23:58:54.7061619+03:00 0HLDP2GUO79TA:00000002 [INF] User logged out. (f9c27106)
+2018-05-13T23:58:54.7280184+03:00 0HLDP2GUO79TA:00000002 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T23:58:54.7680550+03:00 0HLDP2GUO79TA:00000002 [INF] Executed action "Announcements.Controllers.AccountController.Logout (Announcements)" in 462.2742ms (afa2e885)
+2018-05-13T23:58:54.8773512+03:00 0HLDP2GUO79TA:00000002 [INF] Request finished in 602.2942ms 302  (791a596a)
+2018-05-13T23:58:54.9223221+03:00 0HLDP2GUO79TA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:58:54.9540776+03:00 0HLDP2GUO79TA:00000003 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:58:55.0012762+03:00 0HLDP2GUO79TA:00000003 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:58:55.3536328+03:00 0HLDP2GUO79TA:00000003 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 185.9429ms (afa2e885)
+2018-05-13T23:58:55.6768841+03:00 0HLDP2GUO79TA:00000003 [INF] Request finished in 464.3854ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:59:04.7884880+03:00 0HLDP2GUO79TA:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Account/Login   (ca22a1cb)
+2018-05-13T23:59:04.9843616+03:00 0HLDP2GUO79TA:00000004 [INF] Executing action method "Announcements.Controllers.AccountController.Login (Announcements)" with arguments ([""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:59:05.0006871+03:00 0HLDP2GUO79TA:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-05-13T23:59:09.8893756+03:00 0HLDP2GUO79TA:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-05-13T23:59:12.0652078+03:00 0HLDP2GUO79TA:00000004 [INF] Executed action "Announcements.Controllers.AccountController.Login (Announcements)" in 6647.8717ms (afa2e885)
+2018-05-13T23:59:12.9923339+03:00 0HLDP2GUO79TA:00000004 [INF] Request finished in 7293.9535ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:59:30.5687698+03:00 0HLDP2GUO79TA:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:44393/Account/Login application/x-www-form-urlencoded 244 (ca22a1cb)
+2018-05-13T23:59:30.8013536+03:00 0HLDP2GUO79TA:00000005 [INF] Executing action method "Announcements.Controllers.AccountController.Login (Announcements)" with arguments (["Announcements.Models.AccountViewModels.LoginViewModel", ""]) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:59:30.8356872+03:00 0HLDP2GUO79TA:00000005 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-05-13T23:59:32.1292143+03:00 0HLDP2GUO79TA:00000005 [INF] Executed DbCommand ("255"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-05-13T23:59:33.0669741+03:00 0HLDP2GUO79TA:00000005 [INF] Executed DbCommand ("126"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-05-13T23:59:33.5715010+03:00 0HLDP2GUO79TA:00000005 [INF] Executed DbCommand ("37"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-05-13T23:59:33.8331433+03:00 0HLDP2GUO79TA:00000005 [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-05-13T23:59:34.0612814+03:00 0HLDP2GUO79TA:00000005 [INF] Executed DbCommand ("8"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-05-13T23:59:34.1326178+03:00 0HLDP2GUO79TA:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-05-13T23:59:34.1749679+03:00 0HLDP2GUO79TA:00000005 [INF] User logged in. (fdce0db4)
+2018-05-13T23:59:34.1981834+03:00 0HLDP2GUO79TA:00000005 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-05-13T23:59:34.2274021+03:00 0HLDP2GUO79TA:00000005 [INF] Executed action "Announcements.Controllers.AccountController.Login (Announcements)" in 3589.5313ms (afa2e885)
+2018-05-13T23:59:34.3653591+03:00 0HLDP2GUO79TA:00000005 [INF] Request finished in 3694.6701ms 302  (791a596a)
+2018-05-13T23:59:34.4420777+03:00 0HLDP2GUO79TA:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44393/   (ca22a1cb)
+2018-05-13T23:59:34.5412950+03:00 0HLDP2GUO79TA:00000006 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:59:34.5728912+03:00 0HLDP2GUO79TA:00000006 [INF] Executing action method "Announcements.Controllers.HomeController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:59:34.6853388+03:00 0HLDP2GUO79TA:00000006 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-05-13T23:59:35.1439253+03:00 0HLDP2GUO79TA:00000006 [INF] Executed action "Announcements.Controllers.HomeController.Index (Announcements)" in 158.1046ms (afa2e885)
+2018-05-13T23:59:35.7164132+03:00 0HLDP2GUO79TA:00000006 [INF] Request finished in 741.1354ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:59:39.1171637+03:00 0HLDP2GUO79TA:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements   (ca22a1cb)
+2018-05-13T23:59:39.1349543+03:00 0HLDP2GUO79TA:00000007 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:59:39.1673625+03:00 0HLDP2GUO79TA:00000007 [INF] Authorization was successful for user: "gionaul@gion.com". (d7eb274a)
+2018-05-13T23:59:39.1935801+03:00 0HLDP2GUO79TA:00000007 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Index (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:59:39.4345842+03:00 0HLDP2GUO79TA:00000007 [INF] Entity Framework Core "2.1.0-preview2-30571" initialized '"AnnouncementsContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies " (9958f5bb)
+2018-05-13T23:59:39.5783771+03:00 0HLDP2GUO79TA:00000007 [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CategoryId], [a].[ConfirmationCode], [a].[Content], [a].[CreateDate], [a].[ExpireDate], [a].[Location], [a].[OwnerId], [a].[Status], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2018-05-13T23:59:40.9791071+03:00 0HLDP2GUO79TA:00000007 [INF] Executing ViewResult, running view at path "/Views/Announcements/Index.cshtml". (9707eebe)
+2018-05-13T23:59:41.7326093+03:00 0HLDP2GUO79TA:00000007 [INF] Executed DbCommand ("56"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:59:42.1537692+03:00 0HLDP2GUO79TA:00000007 [INF] Executed DbCommand ("10"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:59:42.2395163+03:00 0HLDP2GUO79TA:00000007 [INF] Executed DbCommand ("7"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[Descriprion], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-05-13T23:59:42.8807624+03:00 0HLDP2GUO79TA:00000007 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Index (Announcements)" in 3112.875ms (afa2e885)
+2018-05-13T23:59:43.3023789+03:00 0HLDP2GUO79TA:00000007 [INF] Request finished in 3787.3221ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:59:44.8840586+03:00 0HLDP2GUO79TA:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44393/Announcements/Create   (ca22a1cb)
+2018-05-13T23:59:44.9205378+03:00 0HLDP2GUO79TA:00000008 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:59:44.9687033+03:00 0HLDP2GUO79TA:00000008 [INF] Authorization was successful for user: "gionaul@gion.com". (d7eb274a)
+2018-05-13T23:59:44.9977439+03:00 0HLDP2GUO79TA:00000008 [INF] Executing action method "Announcements.Controllers.AnnouncementsController.Create (Announcements)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-05-13T23:59:46.2493304+03:00 0HLDP2GUO79TA:00000008 [INF] Executing ViewResult, running view at path "/Views/Announcements/Create.cshtml". (9707eebe)
+2018-05-13T23:59:46.8843792+03:00 0HLDP2GUO79TA:00000008 [INF] Executed action "Announcements.Controllers.AnnouncementsController.Create (Announcements)" in 1853.0499ms (afa2e885)
+2018-05-13T23:59:47.3160764+03:00 0HLDP2GUO79TA:00000008 [INF] Request finished in 2104.3988ms 200 text/html; charset=utf-8 (791a596a)
+2018-05-13T23:59:47.3804781+03:00 0HLDP2GUO79TA:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44393/js/autocompleteControl.js   (ca22a1cb)
+2018-05-13T23:59:47.3971401+03:00 0HLDP2GUO79TB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44393/css/autocompleteControl.css   (ca22a1cb)
+2018-05-13T23:59:47.4839028+03:00 0HLDP2GUO79TB:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:59:47.5860981+03:00 0HLDP2GUO79TB:00000001 [INF] Request finished in 205.776ms 404  (791a596a)
+2018-05-13T23:59:48.1400892+03:00 0HLDP2GUO79TA:00000009 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2018-05-13T23:59:48.4572768+03:00 0HLDP2GUO79TA:00000009 [INF] Request finished in 804.639ms 404  (791a596a)

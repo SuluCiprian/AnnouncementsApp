@@ -13,6 +13,7 @@ using Announcements.Models;
 using Announcements.Services;
 using AnnouncementsApp.Persistence;
 using AnnouncementsApp.Persistence.EF;
+using Microsoft.Extensions.Logging;
 
 namespace Announcements
 {
@@ -31,9 +32,12 @@ namespace Announcements
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+            services.AddIdentity<ApplicationUser, IdentityRole>(config =>
+            {
+                config.SignIn.RequireConfirmedEmail = true;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             var dataService = services.BuildServiceProvider().GetService<IUnitOfWork>();
@@ -43,20 +47,24 @@ namespace Announcements
             }
 
             // Add application services.
+            services.AddScoped<IUserService, UserService>();
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IAuthenticationInitializeService, AuthenticationInitializeService>();
 
             services.AddMvc();
+
+            services.Configure<AuthMessageSenderOptions>(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
+                loggerFactory.AddFile("Logs/Announcements-{Date}.txt");
             }
             else
             {

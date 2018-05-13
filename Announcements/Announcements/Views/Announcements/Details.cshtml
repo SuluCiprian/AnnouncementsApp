@@ -32,18 +32,19 @@
         <hr>
 
         <!-- Post Content -->
-        <p class="lead">Category: @Model.Category.Name}</p>
+        <p class="lead">Category: @Model.Category.Name</p>
         <p class="lead">
             Category description:
             @Model.Category.Descriprion
         </p>
         <p class="lead">Location:@Model.Location</p>
+        <p class="lead">Announcement content:@Model.Content</p>
         @*<p>Owner Email: @Model.Owner.Email</p>*@
         @*<p>Owner Phone: @Model.Owner.Phone</p>
         <p>Confirmation Code: ${announcement.confirmationCode}</p>*@
         <p>
             Expires on: <span class="glyphicon glyphicon-time"></span>
-            <c:out value="@Model.ExpireDate" />
+            @Model.ExpireDate
         </p>
         <hr>
 

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Options;
 using Announcements.Models;
 using Announcements.Models.AccountViewModels;
 using Announcements.Services;
+using AnnouncementsApp.Domain;
 
 namespace Announcements.Controllers
 {
@@ -24,17 +25,20 @@ namespace Announcements.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
+        private readonly IUserService _userService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IEmailSender emailSender,
-            ILogger<AccountController> logger)
+            ILogger<AccountController> logger,
+            IUserService userService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
             _logger = logger;
+            _userService = userService;
         }
 
         [TempData]
@@ -226,11 +230,16 @@ namespace Announcements.Controllers
                 {
                     _logger.LogInformation("User created a new account with password.");
 
+                    // create the role and add the user to the database, separated from identity
+                    await _userManager.AddToRoleAsync(user, "User");
+                    User appUser = new User { UserName = model.Email, FirstName = model.FirstName, LastName = model.LastName, Email = model.Email };
+                    _userService.CreateUser(appUser);
+
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
                     await _emailSender.SendEmailConfirmationAsync(model.Email, callbackUrl);
 
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    //await _signInManager.SignInAsync(user, isPersistent: false);
                     _logger.LogInformation("User created a new account with password.");
                     return RedirectToLocal(returnUrl);
                 }

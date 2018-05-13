@@ -18,7 +18,7 @@
                 Category
             </th>
             <th>
-                Description
+                Owner
             </th>
             <th></th>
         </tr>
@@ -34,7 +34,8 @@
                     @Html.DisplayFor(modelItem => item.Category.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Category.Descriprion)
+                    @Html.DisplayFor(modelItem => item.Owner.FirstName)
+                    @Html.DisplayFor(modelItem => item.Owner.LastName)
                 </td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

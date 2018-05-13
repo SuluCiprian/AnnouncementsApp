@@ -7,5 +7,6 @@ namespace AnnouncementsApp.Persistence
 {
     public interface IUserRepository: IRepository<User>
     {
+        User GetUserWithUserName(string userName);
     }
 }

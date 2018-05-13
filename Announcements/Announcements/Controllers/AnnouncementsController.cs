@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Announcements.Services;
 using AnnouncementsApp.Domain;
 using AnnouncementsApp.Persistence;
 using Microsoft.AspNetCore.Authorization;
@@ -12,10 +13,12 @@ namespace Announcements.Controllers
     public class AnnouncementsController : Controller
     {
         private readonly IUnitOfWork _uitOfWork;
+        private readonly IUserService _userService;
 
-        public AnnouncementsController(IUnitOfWork unitOfWork)
+        public AnnouncementsController(IUnitOfWork unitOfWork, IUserService userService)
         {
             _uitOfWork = unitOfWork;
+            _userService = userService;
         }
 
         [Authorize]
@@ -40,6 +43,7 @@ namespace Announcements.Controllers
         {
             if (ModelState.IsValid)
             {
+                announcement.Owner = _userService.GetSignedInUser();
                 _uitOfWork.Announcements.Insert(announcement);
                 _uitOfWork.Complete();
                 return RedirectToAction(nameof(Index));
@@ -62,11 +66,26 @@ namespace Announcements.Controllers
         [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var announcement = _uitOfWork.Announcements.GetById(id);
-            _uitOfWork.Announcements.Delete(announcement);
-            _uitOfWork.Complete();
+            bool admin = await _userService.IsAdmin();
+            
+            
+            if (admin)
+            {
+                _uitOfWork.Announcements.Delete(announcement);
+                _uitOfWork.Complete();
+            } else
+            {
+                var signedInUser = _userService.GetSignedInUser();
+                if (announcement.Owner == signedInUser)
+                {
+                    _uitOfWork.Announcements.Delete(announcement);
+                    _uitOfWork.Complete();
+                }
+            }            
+
             return RedirectToAction(nameof(Index));
         }
 
@@ -75,7 +94,14 @@ namespace Announcements.Controllers
         [Route("Announcements/Edit/{id}", Name = "EditAnnouncements")]
         public IActionResult Edit(int id)
         {
-            return View();
+            var announcement = _uitOfWork.Announcements.GetById(id);
+            var signedInUser = _userService.GetSignedInUser();
+            if (announcement.Owner == signedInUser)
+            {
+                return View();
+            }
+
+            return RedirectToAction("Index");
         }
 
         [Authorize]
@@ -84,7 +110,6 @@ namespace Announcements.Controllers
         [Route("Announcements/Edit")]
         public IActionResult Edit(Announcement announcement)
         {
-
             if (ModelState.IsValid)
             {
                 return RedirectToAction(nameof(Index));
@@ -92,6 +117,7 @@ namespace Announcements.Controllers
             return View(announcement);
         }
 
+        [Authorize]
         public IActionResult Details(int id)
         {
             if (id == 0)
